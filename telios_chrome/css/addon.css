@@ -1,0 +1,168 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    padding-top: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d2d2d;
+}
+
+.box:hover {
+    opacity: 0.8;
+}
+.table-row:hover {
+    opacity: 0.4;
+}
+.tab:hover {
+    opacity: 0.5;
+}
+.tab:active {
+    opacity: 0.2;
+}
+.logout-button:hover {
+    opacity: 0.7;
+}
+.logout-button:active {
+    opacity: 0.4;
+}
+.switch:hover {
+    opacity: 0.7;
+}
+.switch:active {
+    opacity: 0.5;
+}
+.selector-item:hover {
+    opacity: 0.7;
+}
+.selector-item:active {
+    opacity: 0.5;
+}
+.login-button:hover {
+    opacity: 0.7;
+}
+.login-button:active {
+    opacity: 0.5;
+}
+.import-button:hover {
+    opacity: 0.7;
+}
+.import-button:active {
+    opacity: 0.5;
+}
+.export-button:hover {
+    opacity: 0.7;
+}
+.export-button:active {
+    opacity: 0.5;
+}
+.create:hover {
+    opacity: 0.7;
+}
+.create:active {
+    opacity: 0.5;
+}
+.delete:hover {
+    opacity: 0.7;
+}
+.delete:active {
+    opacity: 0.5;
+}
+.webhook-save-button:hover {
+    opacity: 0.7;
+}
+.webhook-save-button:active {
+    opacity: 0.5;
+}
+
+
+.tab {
+    cursor: pointer;
+}
+.logout-button {
+    cursor: pointer;
+}
+.filter-button {
+    cursor: pointer;
+}
+.selector-item {
+    cursor: pointer;
+}
+.switch {
+    cursor: pointer;
+}
+.login-button {
+    cursor: pointer;
+}
+.import-button {
+    cursor: pointer;
+}
+.export-button {
+    cursor: pointer;
+}
+.create {
+    cursor: pointer;
+}
+.delete {
+    cursor: pointer;
+}
+.add-card {
+    cursor: pointer;
+}
+.webhook-save-button {
+    cursor: pointer;
+}
+
+body {
+    overflow: hidden !important;
+}
+
+.table {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+
+.card {
+    min-width: 215px;
+    cursor: pointer;
+}
+
+.cards-list {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+}
+
+
+* {
+    user-select: none;
+}
+
+.cards-list {
+    margin-left: 0px !important;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 3px;
+
+    font-family: Poppins, sans-serif;
+    color: hsla(0, 0%, 100%, 0.3);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+body {
+    background-color: #14181f !important;
+}

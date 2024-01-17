@@ -1,0 +1,147 @@
+{
+	"manifest_version": 2,
+	"name": "Telios Autofill",
+	"version": "1.2.2",
+	"description": "The future of automation.",
+	
+	"permissions": [
+		"tabs",
+		"storage",
+		"activeTab",
+		"webRequest",
+		"system.cpu", 
+		"system.memory", 
+		"system.display",
+		"unlimitedStorage",
+		"http://*/*", "https://*/*",
+		"webNavigation",
+        "cookies",
+        "webRequestBlocking"
+	],
+	"icons": { 
+		"16": "images/Png-2.png",
+		"48": "images/Png-2.png",
+	   "128": "images/Png-2.png" 
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery.js"],
+			"all_frames": true
+			},
+			{
+			  "matches": ["https://www.bestbuy.com/checkout/r/fulfillment", "https://www.bestbuy.com/checkout/r/payment"],
+			  "js": ["jquery.js","modules/bestbuyUS.js"],
+			  "all_frames": true
+			},
+			{
+				"matches": ["https://www.supremenewyork.com/checkout"],
+				"js": ["jquery.js", "modules/supreme.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["<all_urls>", "https://www.bestbuy.ca/checkout/?qit=1#/*/delivery", "https://www.bestbuy.ca/checkout/?qit=1#/*/payment", "https://www.bestbuy.ca/checkout/?qit=1#/*/review"],
+				"js": ["jquery.js", "modules/bestbuyCA.js"],
+				"all_frames": true
+			  },
+			{
+				"matches": ["https://www.gamestop.com/cart/", "https://www.gamestop.com/checkout/login/", "https://www.gamestop.com/spcheckout/"],
+				"js": ["jquery.js","modules/gamestop.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","modules/shopify.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": [
+				  "<all_urls>"
+				],
+				"run_at": "document_start",
+				"js": ["jquery.js", "modules/finshline.js"]
+			  },
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","modules/fill.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["https://www.dickssportinggoods.com/OrderItemDisplay", "https://www.dickssportinggoods.com/DSGBillingAddressView", "<all_urls>"],
+				"js": ["jquery.js","modules/dsg.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","modules/snipes.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","features/linkappender.js"],
+				"all_frames": true
+			  },
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","features/autocart.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches":  ["https://discord.com/channels*"],
+				"js": ["features/alo.js"],
+				"all_frames": false
+			},
+			  {
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","modules/newbalance.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","features/shopifymon.js"],
+				"all_frames": true
+			  }
+			  ,
+			  {
+				"run_at": "document_end",
+				"matches": ["https://www.bestbuy.com/"],
+				"js": ["jquery.js","features/bestbuysku.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","features/recap.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches": ["<all_urls>"],
+				"js": ["jquery.js","features/hcap.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches": ["https://www.supremenewyork.com/shop", "https://www.supremenewyork.com/"],
+				"js": ["jquery.js","features/supreme.js"],
+				"all_frames": true
+			  },
+			  {
+				"run_at": "document_end",
+				"matches": ["https://www.supremenewyork.com/shop/all/*"],
+				"js": ["jquery.js","features/supremelink.js"],
+				"all_frames": true
+			  }
+
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"presistent": false
+	},
+    "browser_action": {
+		"default_icon": "images/Png-2.png",
+		"default_panel": "index.html"
+	}
+}
