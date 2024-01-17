@@ -14,6 +14,8 @@ This chrome extension will not log any data of yours to an external source. Ever
 Source code for everything is available, nothing is obfuscated.
 
 The purpose of this chrome extension was to help their users checkout a desired product in order to make a profit.
+By the use of automation, requests, and web scraping— this chrome extension was able to do what a human could do within in seconds.
+
 During the peak of it's era, it was highly functional and successful.
 
 Currently, I am not sure what modules work but I'm sure the shopify autofill may not be depreciated.
