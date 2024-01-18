@@ -11,6 +11,8 @@ One of my first projects, a chrome extension that automates the checkout process
   - I got rid of the authentication system since it is depreciated
 
 This chrome extension will not log any data of yours to an external source. Everything that is logged is local and no one will have access to anything.
+All bearer tokens and discord webhooks are depreciated and no longer in use for over a year now.
+
 Source code for everything is available, nothing is obfuscated.
 
 The purpose of this chrome extension was to help their users checkout a desired product in order to make a profit.
