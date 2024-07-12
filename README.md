@@ -21,3 +21,7 @@ By the use of automation, requests, and web scraping— this chrome extension wa
 During the peak of it's era, it was highly functional and successful.
 
 Currently, I am not sure what modules work but I'm sure the shopify autofill may not be depreciated.
+
+<img width="1032" alt="Screenshot 2024-07-11 at 5 41 00 PM" src="https://github.com/user-attachments/assets/44f6af0c-3a12-4f90-b34b-801482ef1f80">
+<img width="1030" alt="Screenshot 2024-07-11 at 5 41 20 PM" src="https://github.com/user-attachments/assets/f9bbd9a0-0dc3-4718-ae6d-d87379516f01">
+<img width="1006" alt="Screenshot 2024-07-11 at 5 41 37 PM" src="https://github.com/user-attachments/assets/f0f4549d-7019-4cd1-9178-cf0504d150e1">
